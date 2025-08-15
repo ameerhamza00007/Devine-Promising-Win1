@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divine Promising Win – Mobile Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+</head>
+<body>
+
+    <!-- Video Background -->
+    <video autoplay muted loop id="bg-video">
+        <source src="background.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <!-- Overlay -->
+    <div id="overlay"></div>
+
+    <!-- Hero Section -->
+    <header id="hero">
+        <div class="hero-content">
+            <h1>Divine Promising Win</h1>
+            <p class="hero-subtitle">Your journey of fate, fortune, and divine guidance begins here.</p>
+
+            <!-- Santa Image -->
+            <img src="santa.png" alt="Santa Guide" id="santa">
+
+            <p class="hero-instruction">Spin the wheel to reveal your reward and receive divine guidance!</p>
+            <button id="start-spin" class="glow-button">Spin the Wheel</button>
+        </div>
+    </header>
+
+    <!-- Spin Wheel Section -->
+    <section id="spin-wheel">
+        <h2>Wheel of Destiny</h2>
+        <div class="wheel-wrapper">
+            <!-- Lottie Wheel Embed -->
+            <dotlottie-wc src="https://lottie.host/dd6fbaf5-de3d-42c6-93e0-ebb163333e23/9TY0eCR3r2.lottie" style="width: 300px; height: 300px" speed="1" autoplay loop></dotlottie-wc>
+            <!-- Spin Button -->
+            <button id="spin-btn" class="glow-button">Spin</button>
+        </div>
+        <p class="spin-instruction">Every spin offers insights and surprises tailored for you!</p>
+    </section>
+
+    <!-- eBook Section -->
+    <section id="ebook">
+        <h2>Your Exclusive eBook</h2>
+        <div class="ebook-container">
+            <img src="ebook.png" alt="eBook Cover" class="ebook-cover">
+            <div class="ebook-details">
+                <h3>Gamification & Success eBook</h3>
+                <p>Discover interactive exercises, strategies, and spiritual guidance to maximize your potential.</p>
+                <label for="ebook-price">Set Your Price (USD):</label>
+                <input type="number" id="ebook-price" name="ebook-price" min="1" placeholder="1+">
+                <button id="buy-ebook" class="glow-button">Unlock eBook Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial">
+            <p>"The experience is magical! I never imagined spinning a wheel could feel this meaningful."</p>
+            <span>- Alex, USA</span>
+        </div>
+        <div class="testimonial">
+            <p>"Divine Promising Win is fun, spiritual, and insightful. Absolutely love it!"</p>
+            <span>- Fatima, UAE</span>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3>Is the wheel random?</h3>
+            <p>Every spin is designed to provide personalized guidance along your journey.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Can I set my own eBook price?</h3>
+            <p>Yes! Pay what you feel is fair and help support our project.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Divine Promising Win | All Rights Reserved</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="animation.js"></script>
+    <script src="wheel.js"></script>
+
+</body>
+</html>
